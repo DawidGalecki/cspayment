@@ -1,0 +1,45 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__arrow {
+    cursor: pointer;
+  }
+  &__cardDetails {
+    color: white;
+    font-weight: bold;
+  }
+  &__check {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    path {
+      fill: white;
+    }
+  }
+  &__slideContainer {
+    cursor: pointer;
+    background-image: url('https://i.ibb.co/mzDNCsN/card.jpg');
+    width: 400px;
+    position: relative;
+    height: 225px;
+    &--dark {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      align-items: center;
+    }
+  }
+  &__image {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+}

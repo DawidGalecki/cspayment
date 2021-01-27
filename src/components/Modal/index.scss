@@ -1,0 +1,29 @@
+.modal {
+  &__container {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    height: 600px;
+    width: 800px;
+    background-color: whitesmoke;
+    position: relative;
+    padding: 40px;
+  }
+  &__closeButton {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    font-size: 32px;
+  }
+}

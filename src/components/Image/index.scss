@@ -1,0 +1,19 @@
+.image {
+  position: relative;
+  max-width: min-content;
+  margin: 0 auto;
+  &__badge {
+    position: absolute;
+    background-color: lightgray;
+    right: -8px;
+    padding: 4px;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+  }
+  &__image {
+    max-height: 80px;
+    max-width: 80px;
+  }
+}
